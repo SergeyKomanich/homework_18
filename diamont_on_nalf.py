@@ -16,8 +16,9 @@
           *   *
             *
 """
-height_diamond = int(input('Введите число(высота ромба): '))
-for i in range(2 * height_diamond + 1):
+height = int(input('Введите число(высота ромба): '))
+height_diamond = height // 2 - 1
+for i in range(height_diamond * 2 + 1):
     if i <= height_diamond:
         print('  ' * (height_diamond - i) + ' *' * (i + 1) + ' *' * i)  # СОЗДАЕМ ПЕРВУЮ ПИРАМИДУ
     else:
